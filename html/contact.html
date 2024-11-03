@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <video src="../videos/pulsing logo.mp4" type="video/mp4" autoplay muted loop disablePictureInPicture></video>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/products.html">Services</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/sticker.html">Stickers</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="contact">Contact Form: If you have any questions, feel free to contact us.</h2>
+        <section class="contact-form">
+            <form id="contactForm" action="#" method="POST"> <!-- Use action="#" to prevent redirection -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="confirmationMessage" style="display: none; color: green; margin-top: 15px;">Message sent successfully!</p>
+        </section>
+
+        <h2 class="contact">Map Location:</h2>
+        <section class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509699!2d144.95373531531584!3d-37.817209979751006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11bb53%3A0xa2b153cf9475360e!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1633144040674!5m2!1sen!2sau" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+    </main>
+    <script src="../javascript/contact.js" defer></script>
+    <script src="../javascript/fadein.js" defer></script>
+</body>
+</html>

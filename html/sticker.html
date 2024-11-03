@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenPulse Sticker Generator</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sticker.css">
+    <script src="../javascript/stickerGenerator.js" defer></script>
+</head>
+<body>
+    <!-- Header section with the page title -->
+    <header class="hero">
+        <video src="../videos/pulsing logo.mp4" type="video/mp4" autoplay muted loop disablePictureInPicture></video>
+    </header>
+
+
+    <!-- Navigation menu with links to other pages -->
+    <nav>
+        <ul>
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/products.html">Services</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/sticker.html">Stickers</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>GreenPulse Sticker Generator</h1>
+
+        <!-- Form to Select Crop Health and Nutrient Status -->
+        <div class="options">
+            <label for="healthStatus">Select Crop Health Status:</label>
+            <select id="healthStatus">
+                <option value="Healthy">Healthy</option>
+                <option value="Needs Attention">Needs Attention</option>
+                <option value="Diseased">Diseased</option>
+            </select>
+
+            <button onclick="generateSticker()">Generate Sticker</button>
+            <button onclick="downloadBadge()">Download Sticker</button>
+        </div>
+
+        <!-- Canvas to Display the Generated Badge -->
+        <canvas id="badgeCanvas" width="300" height="200"></canvas>
+    </div>
+    <script src="../javascript/fadein.js" defer></script>
+</body>
+</html>

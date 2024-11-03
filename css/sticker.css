@@ -1,0 +1,41 @@
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+}
+
+h1 {
+    color: #4caf50;
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+label, select, button {
+    font-size: 16px;
+    margin: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+canvas {
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+}

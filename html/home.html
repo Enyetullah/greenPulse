@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Fade-in effect for the body */
+        body {
+            opacity: 0; /* Start invisible */
+            transition: opacity 0.5s ease-in; /* Smooth transition */
+        }
+
+        body.fade-in {
+            opacity: 1; /* Fully visible */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section with a welcoming message -->
+    <header class="hero">
+        <video src="../videos/pulsing logo.mp4" type="video/mp4" autoplay muted loop disablePictureInPicture></video>
+    </header>
+
+    <!-- Navigation menu with links to other pages -->
+    <nav>
+        <ul>
+            <li><a href="../html/home.html">Home</a></li>
+            <li><a href="../html/products.html">Services</a></li>
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/sticker.html">Stickers</a></li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Main content section featuring different items -->
+        <section class="featured">
+            <!-- Featured item for showcasing products -->
+            <div class="featured-item">
+                <h2>Services:</h2>
+                <p>Want to see our newest offered service? Click the image below:</p>
+                <!-- Responsive image for different screen sizes -->
+                <a href="../html/products.html"><img src="../images/Services.webp" alt="Hero Image for Fresh-Life"></a>
+            </div>
+            <!-- Featured item for customer testimonials -->
+            <div class="featured-item">
+                <h2>App:</h2>
+                <p>Want to see what the hype is all about? Download the app by clicking the image below:</p>
+                <figure>
+                    <!-- Link to Yelp page with an image -->
+                    <a href="#" target="_blank" rel="noopener noreferrer"><img src="../images/download app.png" alt="App logo"></a>
+                </figure>
+            </div>
+            <!-- Featured item for latest news -->
+            <div class="featured-item">
+                <h2>Latest News:</h2>
+                <p>For our latest news, visit our Twitter page below:</p>
+                <figure>
+                    <!-- Link to Twitter page with an image -->
+                    <a href="https://x.com/farmingfirst" target="_blank" rel="noopener noreferrer"><img src="../images/twitter.png" alt="Twitter logo"></a>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <script src="../javascript/fadein.js" defer></script>
+</body>
+</html>

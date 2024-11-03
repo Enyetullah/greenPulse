@@ -1,0 +1,38 @@
+/* Remove default padding and margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+/* Fade-in effect for the body */
+
+/* Ensure the introAnimation container fills the screen */
+#introAnimation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 9999; /* Make sure it stays on top */
+    background-color: #171616;
+}
+
+/* Style the video to cover the entire screen */
+#heartbeatAnimation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    object-fit: fill; /* Ensures video covers without stretching */
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    background-color: #171616;
+}
