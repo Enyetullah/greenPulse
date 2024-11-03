@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         animationContainer.style.display = "none";
 
         // Redirect to index page
-        window.location.href = "home.html"; // Redirect to your index page
+        window.location.href = "html/home.html"; // Redirect to your index page
 
         // After a slight delay to allow the page to load
         setTimeout(() => {
